@@ -12,9 +12,9 @@ import { Pokemon } from '../models/pokemon';
 @Injectable()
 export class PokemonService {
 
-  private _baseUrl: string = 'http://pokeapi.co/api/v2';
+  private _baseUrl: string = 'https://pokeapi.co/api/v2';
   private _spriteBaseUrl: string = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other-sprites/official-artwork';
-  private _detailRegex = /^http:\/\/pokeapi.co\/api\/v2\/pokemon\/(\d+)\/$/;
+  private _detailRegex = /^https:\/\/pokeapi.co\/api\/v2\/pokemon\/(\d+)\/$/;
 
   constructor(private http: Http) { }
 
