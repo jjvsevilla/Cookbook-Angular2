@@ -1,0 +1,29 @@
+<div class="col s12 search-container no-padding">
+  <div class="row">
+    <div class="col s12 m6 l5">
+      <a href="./" title="Angular 2 TMDb Movie Search"><img [src]="movieServiceLogo" class="logo" alt="The Movie Database" /></a>
+    </div>
+    <div class="col s12 m6 l7">
+      <div class="row search-container-box">
+        <div class="input-field col s12 search-container-input suffix">
+          <input id="autocomplete-input" type="text" class="validate"
+            (keyup)="getMovies($event)"
+            (click)="getMovies($event)"
+            (focus)="onFocus($event)"
+            (focusout)="onFocusout($event)">
+          <label for="autocomplete-input">Search movie</label>
+          <i class="material-icons prefix">search</i>
+        </div>
+        <div class="input-field col s12 search-container-results" *ngIf="hasMovies && isSearching">
+          <ul>
+            <li *ngFor="let movie of movies">
+              <div class="search-suggestion" (click)="selectMovie(movie)">
+                {{movie?.originalTitle}}
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

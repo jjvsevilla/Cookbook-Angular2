@@ -1,0 +1,17 @@
+<div class="col-xs-12 cardcont no-padding">
+  <div class="meta-data-container col s12 m8 push-m4 l7 push-l5">
+    <h1>{{movie?.originalTitle}}</h1>
+    <span class="tagline">{{movie?.tagline}}</span>
+    <p>{{movie?.overview}}</p>
+    <div class="additional-details">
+      <div class="no-padding release-details">
+        <div class="col-xs-6"> Original Release: <span class="meta-movie?">{{movie?.release}}</span></div>
+        <div class="col-xs-6"> Running Time: <span class="meta-movie?">{{movie?.runtime}} mins</span> </div>
+        <div class="col-xs-6"> Vote Average: <span class="meta-movie?">{{movie?.vote}}</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="poster-container no-padding col s12 m4 pull-m8 l5 pull-l7">
+    <img id="postertest" class="poster" [src]="movie?.posterPath"/>
+  </div>
+</div>

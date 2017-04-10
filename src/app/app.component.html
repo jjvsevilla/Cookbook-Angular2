@@ -1,3 +1,20 @@
-<h1>
-  {{title}}
-</h1>
+<div id="app">
+  <header>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo right">{{title}}</a>
+          <ul id="nav-mobile" class="left hide-on-small-only">
+            <li><a [routerLink]="['/pokemons']" href="">Pokédex</a></li>
+            <li><a [routerLink]="['/movies']" href="">IMDb</a></li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <section>
+      <router-outlet></router-outlet>
+    </section>
+  </main>
+</div>
+
+

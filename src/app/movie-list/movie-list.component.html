@@ -1,0 +1,3 @@
+<movie-search-box (handleSelectMovie)="handleSelectMovie($event)"></movie-search-box>
+
+<movie-card *ngIf="!loading" [movie]="movie?.baseInfo"></movie-card>

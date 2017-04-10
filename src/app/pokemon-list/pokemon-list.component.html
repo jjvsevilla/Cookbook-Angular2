@@ -1,0 +1,11 @@
+<p class="centered">Gotta catch all {{count}} pokemons</p>
+
+<app-pagination [offset]="offset" [limit]="limit" [size]="count" (pageChange)="onPageClick($event)"></app-pagination>
+
+<app-loader [loading]="loading" [failed]="failed"></app-loader>
+
+<div class="row">
+  <div class="col s6 m4 l4 xl3" *ngFor="let pokemon of pokemons">
+    <pokemon-card [pokemon]="pokemon"></pokemon-card>
+  </div>
+</div>

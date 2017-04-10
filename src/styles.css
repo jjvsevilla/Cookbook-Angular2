@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~materialize-css/dist/css/materialize.min.css';
+
+:root {
+  --lightGrey: #fafafa;
+  --midGrey: #ccc;
+  --darkGrey: #343434;
+  --limeGreen: #00FC87;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+  color: var(--lightGrey);
+}
+
+body {
+  background: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+#outer-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85) 15%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 1) 90%);
+  height: 100%;
+  background-attachment: fixed;
+  margin:0;
+}
+
+#app {
+  animation: fadein ease-out 1.4s;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+nav {
+  background-color: #333333;
+  border-bottom: 1px solid #26a69a;
+  box-shadow: 0 1px 0 0 #26a69a;
+}

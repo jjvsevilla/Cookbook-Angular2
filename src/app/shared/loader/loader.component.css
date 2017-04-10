@@ -1,0 +1,5 @@
+.loader-component-container {
+  position: fixed;
+  top: calc(50% - 64px - 32px);
+  left: calc(50% - 32px);
+}
