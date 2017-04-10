@@ -11,7 +11,7 @@ import { MovieEntry } from '../shared/models';
 })
 export class MovieSearchBoxComponent {
   onFocusOutTimeOut: number = 200;
-  movieServiceLogo: string = '../../assets/lospapus-logo.png';
+  movieServiceLogo: string = 'assets/lospapus-logo.png';
   movies: MovieEntry[];
   hasMovies: boolean = false;
   isSearching: boolean = false;
