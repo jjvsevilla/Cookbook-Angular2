@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { PokemonEntry } from '../shared/models/pokemon-entry';
+import { PokemonEntry } from '../shared/models';
 
 @Component({
   moduleId: module.id,

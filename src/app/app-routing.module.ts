@@ -3,9 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
-
 import { MovieListComponent } from './movie-list/movie-list.component';
-
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 const routes: Routes = [

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TheMovieDbService } from '../shared/services/themoviedb.service';
-import { MovieEntry } from '../shared/models/movie-entry';
-import { Movie } from '../shared/models/movie';
+import { TheMovieDbService } from '../shared/services';
+import { MovieEntry, Movie } from '../shared/models';
 
 @Component({
   moduleId: module.id,

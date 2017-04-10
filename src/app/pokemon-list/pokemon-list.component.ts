@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PokemonService } from '../shared/services/pokemon.service';
-import { PokemonEntry } from '../shared/models/pokemon-entry';
-import { Pokemon } from '../shared/models/pokemon';
+import { PokemonService } from '../shared/services';
+import { PokemonEntry, Pokemon } from '../shared/models';
 
 @Component({
   moduleId: module.id,

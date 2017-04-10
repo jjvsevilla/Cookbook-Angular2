@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Location } from '@angular/common';
-import { PokemonService } from '../shared/services/pokemon.service';
-import { Pokemon } from '../shared/models/pokemon';
+import { PokemonService } from '../shared/services';
+import { Pokemon } from '../shared/models';
 
 @Component({
   moduleId: module.id,

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   moduleId: module.id,
   template: `
     <article>
-      <h4>Not found component!</h4>
+      <h4>Not found component</h4>
     </article>
   `
 })

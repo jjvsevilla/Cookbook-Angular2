@@ -9,13 +9,13 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'PapusBook A2';
+  title = 'Cookbook A2';
 
   constructor(private titleService: Title, private router: Router) { }
 
   ngOnInit() {
     this.router.events
       .filter(event => event instanceof NavigationStart)
-      .subscribe(event => this.titleService.setTitle('Pokedex'));
+      .subscribe(event => this.titleService.setTitle(this.title));
   }
 }

@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import $ from 'jquery';
-import { TheMovieDbService } from '../shared/services/themoviedb.service';
-import { MovieEntry } from '../shared/models/movie-entry';
+import { TheMovieDbService } from '../shared/services';
+import { MovieEntry } from '../shared/models';
 
 @Component({
   moduleId: module.id,
@@ -10,7 +10,7 @@ import { MovieEntry } from '../shared/models/movie-entry';
   styleUrls: ['./movie-search-box.component.css']
 })
 export class MovieSearchBoxComponent {
-  onFocusOutTimeOut: number = 100;
+  onFocusOutTimeOut: number = 200;
   movieServiceLogo: string = '../../assets/lospapus-logo.png';
   movies: MovieEntry[];
   hasMovies: boolean = false;

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MovieEntry } from '../shared/models/movie-entry';
+import { MovieEntry } from '../shared/models';
 
 @Component({
   moduleId: module.id,
