@@ -1,7 +1,0 @@
-.pagination-component-container {
-  display: flex;
-  justify-content: space-around;
-}
-.pagination.pagination-component-container li a {
-  color: var(--lightGrey);
-}

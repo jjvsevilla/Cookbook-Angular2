@@ -36,7 +36,7 @@ export class MovieSearchBoxComponent {
       .findAll(this.query)
       .subscribe(result => {
         this.movies = result.movies;
-        this.hasMovies = true;
+        this.hasMovies = !!result.movies.length;
         this.isSearching = true;
         this.loading = false;
       }, () => {

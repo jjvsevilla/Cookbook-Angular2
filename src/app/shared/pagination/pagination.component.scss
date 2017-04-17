@@ -1,0 +1,16 @@
+@import "../../../styles/_colors.scss";
+
+.pagination-component-container {
+  display: flex;
+  justify-content: space-around;
+
+  li {
+    &:hover {
+      background-color: $grey700;
+    }
+
+    a {
+      color: $lightGrey;
+    }
+  }
+}

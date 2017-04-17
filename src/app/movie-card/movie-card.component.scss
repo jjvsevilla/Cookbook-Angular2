@@ -1,0 +1,42 @@
+@import "../../styles/_colors.scss";
+
+.movie-card-container {
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.85);
+
+  .meta-data-container {
+    padding:  0 15px 15px;
+    color: $lightGrey;
+
+    h1 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 2.2em;
+      margin-top: 0;
+    }
+
+    .tagline {
+      display: block;
+      padding-bottom: 0.25em;
+      color: $limeGreen;
+      font-size: 1.3em;
+    }
+
+    .additional-details {
+      margin: 35px 0 20px;
+
+      .release-details {
+        div {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  .poster-container {
+    .poster {
+      width: 100%;
+      border-radius: 0 0 3px 3px;
+    }
+  }
+}

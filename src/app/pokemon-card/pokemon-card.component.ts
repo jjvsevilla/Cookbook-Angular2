@@ -5,7 +5,7 @@ import { PokemonEntry } from '../shared/models';
   moduleId: module.id,
   selector: 'pokemon-card',
   templateUrl: './pokemon-card.component.html',
-  styleUrls: ['./pokemon-card.component.css']
+  styleUrls: ['./pokemon-card.component.scss']
 })
 export class PokemonCardComponent {
   @Input() pokemon: PokemonEntry = null;
