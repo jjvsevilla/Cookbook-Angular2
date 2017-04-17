@@ -7,8 +7,8 @@ describe('cookbook-angular2 App', () => {
     page = new CookbookAngular2Page();
   });
 
-  it('should display message saying app works', () => {
+  it('should display the title saying Cookbook A2', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Cookbook A2');
   });
 });

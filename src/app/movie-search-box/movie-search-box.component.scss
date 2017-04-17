@@ -1,7 +1,60 @@
+@import "../../styles/_variables.scss";
+
 .search-container {
   margin-top: 50px;
+
+  .search-container-box {
+    position: relative;
+    min-height: 48px;
+    z-index: 100;
+
+    .search-container-input {
+      position: absolute;
+      height: 48px;
+      margin-top: 0;
+      top: 0;
+    }
+
+    .search-container-results {
+      position: absolute;
+      height: auto;
+      top: 48px;
+      animation: fadein ease-out 0.5s;
+      min-width: 100%;
+      margin-top: 10px;
+      margin-left: 10px;
+      padding: 5px 0;
+      background: rgba(0, 0, 0, 0.85);
+      border-radius: 4px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+      background-clip: padding-box;
+      color: $lightGrey;
+
+      ul {
+        margin: 0;
+      }
+
+      .search-suggestion {
+        padding: 3px 20px;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .search-suggestion:hover {
+        color: $darkGrey;
+        background-color: $limeGreen;
+        cursor: pointer;
+      }
+
+    }
+
+
+  }
+
+
 }
 
+/*
 .search-container .search-container-box {
   position: relative;
   min-height: 48px;
@@ -28,7 +81,7 @@
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
-  color: var(--lightGrey);
+  color: $lightGrey;
 }
 
 .search-container .search-container-box .search-container-results ul {
@@ -42,11 +95,13 @@
 }
 
 .search-container .search-container-box .search-container-results .search-suggestion:hover {
-  color: var(--darkGrey);
-  background-color: var(--limeGreen);
+  color: $darkGrey;
+  background-color: $limeGreen;
   cursor: pointer;
 }
+*/
 
+/*
 .input-field.suffix i {
   position: absolute;
   width: 3rem;
@@ -88,3 +143,4 @@
     width: calc(100% - 3rem);
   }
 }
+*/

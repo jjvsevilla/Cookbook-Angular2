@@ -7,7 +7,7 @@ import { MovieEntry } from '../shared/models';
   moduleId: module.id,
   selector: 'movie-search-box',
   templateUrl: './movie-search-box.component.html',
-  styleUrls: ['./movie-search-box.component.css']
+  styleUrls: ['./movie-search-box.component.scss']
 })
 export class MovieSearchBoxComponent {
   onFocusOutTimeOut: number = 200;
