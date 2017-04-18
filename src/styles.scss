@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import '~materialize-css/dist/css/materialize.min.css';
+// @import '~materialize-css/dist/css/materialize.min.css';
+@import "../node_modules/materialize-css/dist/css/materialize.css";
 @import "./styles/_colors.scss";
 @import "./styles/_animations.scss";
 

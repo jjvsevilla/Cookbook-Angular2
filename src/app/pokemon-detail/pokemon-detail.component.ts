@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { Location } from '@angular/common';
 import { PokemonService } from '../shared/services';
 import { Pokemon } from '../shared/models';
+import { MaterializeAction } from 'angular2-materialize';
 
 @Component({
   moduleId: module.id,
@@ -15,6 +16,7 @@ export class PokemonDetailComponent implements OnInit {
   pokemon: Pokemon;
   loading: boolean = false;
   failed: boolean = false;
+  modalActions = new EventEmitter<string|MaterializeAction>();
 
   constructor(
     private route: ActivatedRoute,
@@ -50,4 +52,12 @@ export class PokemonDetailComponent implements OnInit {
   goBack() {
     this.location.back();
   }
+
+  openModal() {
+    this.modalActions.emit({action:"modal",params:['open']});
+  }
+  closeModal() {
+    this.modalActions.emit({action:"modal",params:['close']});
+  }
+
 }

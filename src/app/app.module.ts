@@ -4,7 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import './rxjs-extensions';
-import 'materialize-css';
+import { MaterializeModule } from 'angular2-materialize';
+
+// import 'materialize-css';
 
 import { AppComponent } from './app.component';
 import { PokemonService } from './shared/services/pokemon.service';
@@ -33,6 +35,7 @@ import { LoaderComponent } from './shared/loader/loader.component';
     FormsModule,
     HttpModule,
     AppRoutingModule,
+    MaterializeModule,
   ],
   providers: [
     PokemonService,
